@@ -1,0 +1,13 @@
+route:
+  receiver: default
+  group_by: ['alertname', 'severity']
+  routes:
+    - match:
+        severity: benign
+      receiver: benign
+
+receivers:
+  - name: benign
+  - name: default
+    pagerduty_configs:
+      - service_key: PAGERDUTY_SERVICE_KEY

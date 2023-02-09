@@ -1,0 +1,6 @@
+site_name: Job Taster Alert References
+nav:
+  - Home: 'index.md'
+  - References:
+      - references/MONEY_NO_ENOUGH.md
+      - references/JARYL_IS_DUMB_DUMB.md
