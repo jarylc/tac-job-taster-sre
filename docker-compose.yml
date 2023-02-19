@@ -1,9 +1,11 @@
 version: "3"
 services:
   taster:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: registry.gitlab.com/jarylc/tac-job-taster-sre
+#    ALTERNATIVELY, UNCOMMENT TO BUILD AND RUN
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
     env_file:
       - .env
     network_mode: "host"
