@@ -18,7 +18,7 @@ Simulating a simple Minecraft emerald bank alerting service that alerts when the
 
 Everytime the bank is queried, it reads from balance.txt, minuses from expenses.txt and adds from income.txt.
 
-A benign alert, `JARYL_IS_DUMB_DUMB`, pops up after 1 minute of the service being up.
+A benign alert, `JARYL_IS_DUMB_DUMB`, pops up after 2 minutes of the service being up.
 
 ### Services & Ports Used
 Clear these ports if required
