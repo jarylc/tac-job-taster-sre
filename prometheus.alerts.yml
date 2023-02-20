@@ -1,17 +1,17 @@
 groups:
   - name: BANK_ALERTS
     rules:
-      - alert: MONEY_NO_ENOUGH
+      - alert: EMERALDS_NO_ENOUGH
         expr: balance == 0
         labels:
           severity: 'critical'
         annotations:
-          link: "http://127.0.0.1:8000/references/MONEY_NO_ENOUGH"
-          summary: "Not enough money, how sia!?"
+          link: "http://127.0.0.1:8000/references/EMERALDS_NO_ENOUGH"
+          summary: "Not enough emeralds, how sia!?"
           dashboard: "http://127.0.0.1:9090/graph?g0.expr=balance&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1h"
 
       - alert: JARYL_IS_DUMB_DUMB
-        expr: count_over_time(up{job="prometheus"}[5m]) == 60
+        expr: count_over_time(up{job="prometheus"}[5m]) == 30
         labels:
           severity: 'benign'
         annotations:

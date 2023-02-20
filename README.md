@@ -14,7 +14,7 @@ setInterval(() => document.querySelector("h1 > svg")?.parentElement?.setHTML("<i
 ```
 
 ### Description
-Simulating a simple bank alerting service that alerts when the balance reaches $0 (`MONEY_NO_ENOUGH`).
+Simulating a simple Minecraft emerald bank alerting service that alerts when the balance reaches $0 (`EMERALDS_NO_ENOUGH`).
 
 Everytime the bank is queried, it reads from balance.txt, minuses from expenses.txt and adds from income.txt.
 
