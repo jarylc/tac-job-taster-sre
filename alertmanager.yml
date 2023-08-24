@@ -11,3 +11,4 @@ receivers:
   - name: default
     pagerduty_configs:
       - service_key: PAGERDUTY_SERVICE_KEY
+        severity: 'critical'

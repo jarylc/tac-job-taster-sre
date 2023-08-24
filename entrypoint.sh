@@ -1,5 +1,5 @@
 #!/bin/ash
-echo "30" > balance.txt
+echo "45" > balance.txt
 echo "5" > expense.txt
 echo "0" > income.txt
 

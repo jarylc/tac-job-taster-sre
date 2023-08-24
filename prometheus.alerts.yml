@@ -6,14 +6,14 @@ groups:
         labels:
           severity: 'critical'
         annotations:
-          link: "http://127.0.0.1:8000/references/EMERALDS_NO_ENOUGH"
+          help: "http://127.0.0.1:8000/references/EMERALDS_NO_ENOUGH"
           summary: "Not enough emeralds, how sia!?"
-          dashboard: "http://127.0.0.1:9090/graph?g0.expr=balance&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1h"
+          graphs: "http://127.0.0.1:9090/graph?g0.expr=balance&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1h"
 
       - alert: JARYL_IS_DUMB_DUMB
         expr: count_over_time(up{job="prometheus"}[2m]) >= 23
         labels:
           severity: 'benign'
         annotations:
-          link: "http://127.0.0.1:8000/references/JARYL_IS_DUMB_DUMB"
+          help: "http://127.0.0.1:8000/references/JARYL_IS_DUMB_DUMB"
           summary: "Jaryl is a dumb dumb!"
