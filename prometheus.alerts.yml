@@ -11,7 +11,7 @@ groups:
           graphs: "http://127.0.0.1:9090/graph?g0.expr=balance&g0.tab=0&g0.stacked=0&g0.show_exemplars=0&g0.range_input=1h"
 
       - alert: JARYL_IS_DUMB_DUMB
-        expr: count_over_time(up{job="prometheus"}[2m]) >= 23
+        expr: count_over_time(up{job="prometheus"}[1m]) >= 12
         labels:
           severity: 'benign'
         annotations:

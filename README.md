@@ -4,8 +4,9 @@
 ### Quick Start
 ```shell
 $ sed "s/YOUR_PAGERDUTY_SERVICE_KEY/REPLACE_ME_WITH_YOUR_ACTUAL_PAGERDUTY_SERVICE_KEY/g" .env.example > .env
-$ docker-compose up --abort-on-container-exit # --build
+$ docker compose up --abort-on-container-exit # --build
 ```
+
 [Click here to open Karma](http://127.0.0.1:8080/?q=%40state%3Dactive)
 
 You can open DevTools to set the Karma coffee cup to a more interesting GIF (only works on Chrome):

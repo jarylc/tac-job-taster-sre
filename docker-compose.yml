@@ -1,11 +1,13 @@
-version: "3"
 services:
   taster:
-    image: registry.gitlab.com/jarylc/tac-job-taster-sre
+#    image: registry.gitlab.com/jarylc/tac-job-taster-sre
 #    ALTERNATIVELY, UNCOMMENT TO BUILD AND RUN
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: host
     env_file:
       - .env
     network_mode: "host"
+    volumes:
+      - /usr/share/certificates:/usr/local/share/ca-certificates:ro

@@ -14,8 +14,8 @@ Maybe a creeper blew your chest filled with emeralds up.
 ```shell
 $ docker exec -it $(docker ps | grep taster | cut -d' ' -f1) /bin/ash
 ```
-#### 2. Add 45 emeralds to balance.txt
+#### 2. Add 30 emeralds to balance.txt
 ```shell
 $ cd /root
-$ echo $(($(cat balance.txt) + 45)) > balance.txt
+$ echo $(($(cat balance.txt) + 20)) > balance.txt
 ```
